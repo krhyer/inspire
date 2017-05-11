@@ -1,0 +1,16 @@
+body{
+    background-image: "https://unsplash.it/g/200/300/?random";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+#weather{
+    text-align: right
+}
+#quote{
+    text-align: center;
+    margin-top: 25%
+    
+}

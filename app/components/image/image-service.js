@@ -6,7 +6,9 @@ function ImageService() {
 	this.getImage = function (callWhenDone) {
 		// ^^^^^^^ How do you use this?
 		return $.get(apiUrl, function (res) {
+			res = JSON.parse(res)
 			console.log('Image Data:', res)
+			callWhenDone(res)
 			//What are you going to do with the image that comes back?
 		})
 	}

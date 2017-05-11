@@ -3,20 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="body">
 	<div id="weather">
-		Your Weather Template
+		
 	</div>
 
 	<div id="quote">
-		The Quote
+		
 	</div>
 
+		<form class="form-inline" onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+            <input type="text" class="form-control" name="todo" id="todo-box" placeholder="ADD TO LIST" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+        </div>
+    </form>
 	<div id="todo">
-		A Todo List
+		
+		
+       
 	</div>
 
 
