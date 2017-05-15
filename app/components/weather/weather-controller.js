@@ -1,10 +1,14 @@
 function WeatherController() {
 	var weatherService = new WeatherService();
-
+	var far = true
+	var wc = this
 	this.getWeather = function () {
 		weatherService.getWeather(draw, failed)
 	}
-
+	this.toggleWeather = function () {
+		far = !far
+		wc.getWeather()
+	}
 	//What can you do with this weather object?
 
 	function draw(weather) {
@@ -14,10 +18,17 @@ function WeatherController() {
 		var F = weather.main.temp * 9 / 5 - 459.67
 		var weaF = Math.round(F)
 		var weaC = Math.round(C)
+		var temp = weaF
+		if (far) {
+			temp = weaF
+		}
+		else {
+			temp = weaC
+		}
 		template += `
             
 					
-					<h2>${weaF}°</h2>
+					<h2 >${temp}°</h2>
                     <h3>${weather.name}</h3>
 
         `
