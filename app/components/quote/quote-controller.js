@@ -12,7 +12,7 @@ function QuoteController(){
 	
 		template += `
             
-					<h4>${quote.quote} -${quote.author}</h4>
+					<h4>"${quote.quote}" -${quote.author}</h4>
 					
 
         `
