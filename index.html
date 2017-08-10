@@ -8,16 +8,34 @@
 </head>
 
 <body id="body">
-	<div onclick="app.controllers.weatherController.toggleWeather()" id="weather"></div>
-	<div id="clock"></div>
-	<div id="quote"></div>
-	<form class="form-inline" onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-		<input type="text" class="form-control" name="todo" id="todo-box" placeholder="ADD TO LIST" />
-		<button type="submit" class="btn btn-primary">Submit</button>
-		<div class="form-group">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div onclick="app.controllers.weatherController.toggleWeather()" id="weather"></div>
+			</div>
 		</div>
-	</form>
-	<div id="todo"></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="clock"></div>
+			</div>
+		</div>
+		<div class="row bottom">
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6">
+				<div id="quote"></div>
+			</div>
+			<div class="col-xs-3">
+				<form class="form-inline" onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+					<input type="text" class="form-control" name="todo" id="todo-box" placeholder="ADD TO LIST" />
+					<button type="submit" class="btn">
+  							<span class="glyphicon glyphicon-plus-sign"></span>
+						</button>
+					<div class="form-group"></div>
+				</form>
+				<div id="todo"></div>
+			</div>
+		</div>
+	</div>
 
 
 

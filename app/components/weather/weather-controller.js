@@ -28,8 +28,8 @@ function WeatherController() {
 		template += `
             
 					
-					<h2 >${temp}°</h2>
-                    <h3>${weather.name}</h3>
+					<h4 >${temp}°</h4>
+                    <h5>${weather.name}</h5>
 
         `
 		elem.innerHTML = template

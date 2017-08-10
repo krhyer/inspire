@@ -10,7 +10,19 @@ body{
     text-align: right
 }
 #quote{
-    text-align: center;
-    margin-top: 25%
-    
+    text-align: center    
+}
+#clock{
+    text-align: center;    
+    margin-top: 200px    
+}
+h1{
+    font-size: 75px
+}
+.bottom{
+    margin-top: 10%
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
 }

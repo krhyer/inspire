@@ -30,7 +30,7 @@ function TodoController() {
 		for (i = 0; i < todoList.length; i++) {
 			template += `
 		
-			<li>${todoList[i]}<button class="remove" id="${i}">x</button></li>
+			<li>${todoList[i]}  <button class="remove btn-xs" id="${i}"><span class="glyphicon glyphicon-ok-sign"></span></button></li>
 		
 		`
 		}
@@ -54,19 +54,3 @@ function TodoController() {
 			}
 
 }
-// function TodoController() {
-// 	// new up the TodoService that has already been configured for your use
-// 	// There are two methods getTodos returns and array
-// 	// saveTodos accepts an array and stores it to your local storage
-// 	var todoService = new TodoService()
-// 	this.addTodoFromForm = function (event) {
-// 		event.preventDefault()
-// 		var task = document.getElementById("task");
-// 		// TAKE THE INFORMATION FORM THE FORM
-// 		//ADD IT TO THE ARRAY BELOW
-// 		var todosArry = todoService.getTodos()
-// 		todosArry.push(task.value);
-// 		// FINAL ACTION OF ADDING A TODO
-// 		todoService.saveTodos(todosArry)
-// 		show()
-
